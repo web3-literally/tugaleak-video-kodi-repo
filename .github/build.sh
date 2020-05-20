@@ -11,7 +11,7 @@ fi
 
 CWD=$(pwd)
 SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
+TARGET_BRANCH="master"
 
 BUILD_DIR="$HOME/.build"
 SOURCES_DIR="$HOME/.sources"
