@@ -17,4 +17,5 @@ script:
 branches:
   only:
     - master
+    - gh-pages
     # Add more branches if required

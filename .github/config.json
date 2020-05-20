@@ -3,6 +3,10 @@
         {
             "name": "master",
             "minversion": "17.0.0"
+        },
+        {
+            "name": "gh-pages",
+            "minversion": "17.0.0"
         }
     ]
 }
