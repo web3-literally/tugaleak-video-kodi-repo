@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Adapted from https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
-print '1111111111111111'
 
 set -e
 
@@ -98,7 +97,7 @@ ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
 
 eval `ssh-agent -s`
 # Use stdin/stdout instead of key writing to disk
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in "$CWD/.github/deploy_key.enc" -d | ssh-add -
+openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in "$CWD/.github/deploy_key.enc" -d -pass pass:19950809| ssh-add -
 
 # Now that we're all set up, we can push.
 git push --quiet $SSH_REPO $TARGET_BRANCH
