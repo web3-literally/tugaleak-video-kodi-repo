@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Sign-up / Subscrição">
+        <setting label="Please Input Username and Password."/>
+        <setting type="sep"/>
+        <setting id='username' type="text" label="Username" default=""/>
+        <setting id='password' type="text" label="Password" default="" option="hidden" enable="!eq(-1,false)"/>
+        <setting type="sep"/>
+        <setting label="EN: You will need to register a free account and subscribe in www.tugaleak.com/register."/>
+        <setting label="PT: Precisas de te registar gratuitamente em www.tugaleak.com/register e inscrever-te para teres acesso."/>
+    </category>
+</settings>
